@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boings y Sabritas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<img aling="right"  src="boing.jpg">
+    <img src="sabritas.jpg">
+<body>
+    <h1><center>Punto de Venta de Boings y Sabritas</center></h1>
+    <hr>
+    
+    <!-- Lista de productos -->
+    <div class="products">
+        <div class="product" data-name="Gomitas" data-price="10">
+            <h3>Boing de Mango</h3>
+            <p>Precio: $16</p>
+            <input type="number" min="1" value="1" class="quantity">
+            <button onclick="addToCart('Gomitas', 10)">Agregar al Carrito</button>
+        </div>
+        <div class="product" data-name="Paletas" data-price="5">
+            <h3>Boing de Manzana</h3>
+            <p>Precio: $16</p>
+            <input type="number" min="1" value="1" class="quantity">
+            <button onclick="addToCart('Paletas', 5)">Agregar al Carrito</button>
+        </div>
+        <div class="product" data-name="Chocolate" data-price="20">
+            <h3>Sabritas clásicas</h3>
+            <p>Precio: $18</p>
+            <input type="number" min="1" value="1" class="quantity">
+            <button onclick="addToCart('Chocolate', 20)">Agregar al Carrito</button>
+        </div>
+    </div>
+
+    <!-- Carrito -->
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cartItems"></ul>
+        <p id="total">Total: $0</p>
+        <button onclick="clearCart()">Vaciar Carrito</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
